@@ -1,0 +1,38 @@
+{
+  "name": "pack-list",
+  "version": "1.0.0",
+  "description": "An app for tracking backpacking gear and creating pack lists.",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamkendis/pack-list.git"
+  },
+  "author": "Adam Kendis (https://github.com/adamkendis)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamkendis/pack-list/issues"
+  },
+  "homepage": "https://github.com/adamkendis/pack-list#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
