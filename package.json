@@ -5,6 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "wp-build": "webpack --watch",
     "start": "nodemon server/index.js"
   },
   "repository": {
@@ -20,6 +22,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "jquery": "^3.3.1",
+    "knex": "^0.15.2",
+    "pg": "^7.7.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
