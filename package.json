@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --config ./webpack.config.js --mode development",
     "build": "webpack --watch",
+    "toolbox": "react-toolbox-themr",
     "start": "nodemon server/index.js"
   },
   "repository": {
@@ -19,6 +20,20 @@
     "url": "https://github.com/adamkendis/pack-list/issues"
   },
   "homepage": "https://github.com/adamkendis/pack-list#readme",
+  "reactToolbox": {
+    "include": [
+      "BUTTON",
+      "DATE_PICKER"
+    ],
+    "customProperties": {
+      "animation-duration": "0.3s",
+      "color-accent": "var(--palette-pink-a200)",
+      "color-accent-dark": "var(--palette-pink-700)",
+      "color-primary-contrast": "var(--color-dark-contrast)",
+      "color-accent-contrast": "var(--color-dark-contrast)"
+    },
+    "output": "assets/react-toolbox"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.4",
@@ -26,7 +41,8 @@
     "knex": "^0.15.2",
     "pg": "^7.7.1",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-toolbox": "^2.0.0-beta.13"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
@@ -35,6 +51,9 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
+    "node-sass": "^4.10.0",
+    "react-toolbox-themr": "^1.0.2",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
