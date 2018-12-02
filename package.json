@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/adamkendis/pack-list#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
     "knex": "^0.15.2",
